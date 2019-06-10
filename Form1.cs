@@ -88,16 +88,14 @@ namespace howto_hexagonal_grid
         // Display the row and column under the mouse.
         private void PicGrid_MouseMove(object sender, MouseEventArgs e)
         {
-            int row, col;
-            PointToHex(e.X, e.Y, HexHeight, out row, out col);
+            PointToHex(e.X, e.Y, HexHeight, out var row, out var col);
             Text = $"({row}, {col})";
         }
 
         // Add the clicked hexagon to the Hexagons list.
         private void PicGrid_MouseClick(object sender, MouseEventArgs e)
         {
-            int row, col;
-            PointToHex(e.X, e.Y, HexHeight, out row, out col);
+            PointToHex(e.X, e.Y, HexHeight, out var row, out var col);
 
             var pointF = new PointF(row, col);
             if (_hexagons.Contains(pointF))
