@@ -110,7 +110,7 @@ namespace howto_hexagonal_grid
             var y1 = points[1].Y;
             var x2 = 0.75f * (points[3].X - x1);
             var y2 = points[4].Y - y1;
-            var rectangleF = new RectangleF(x1, y1,x2,y2);
+            var rectangleF = new RectangleF(x1, y1, x2, y2);
             _testRects.Add(rectangleF);
 #endif
 
