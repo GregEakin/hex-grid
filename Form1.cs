@@ -24,7 +24,7 @@ namespace howto_hexagonal_grid
         private readonly List<RectangleF> _testRects = new List<RectangleF>();
 #endif
 
-        private void PicGrid_Paint(object sender, PaintEventArgs e)
+        private void PictureBox_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
@@ -35,8 +35,8 @@ namespace howto_hexagonal_grid
             }
 
             DrawHexGrid(e.Graphics, Pens.Black,
-                0, picGrid.ClientSize.Width,
-                0, picGrid.ClientSize.Height,
+                0, pictureBox.ClientSize.Width,
+                0, pictureBox.ClientSize.Height,
                 HexHeight);
 
 #if FIG34
@@ -80,20 +80,20 @@ namespace howto_hexagonal_grid
             }
         }
 
-        private void PicGrid_Resize(object sender, EventArgs e)
+        private void PictureBox_Resize(object sender, EventArgs e)
         {
-            picGrid.Refresh();
+            pictureBox.Refresh();
         }
 
         // Display the row and column under the mouse.
-        private void PicGrid_MouseMove(object sender, MouseEventArgs e)
+        private void PictureBox_MouseMove(object sender, MouseEventArgs e)
         {
             PointToHex(e.X, e.Y, HexHeight, out var row, out var col);
             Text = $"({row}, {col})";
         }
 
         // Add the clicked hexagon to the Hexagons list.
-        private void PicGrid_MouseClick(object sender, MouseEventArgs e)
+        private void PictureBox_MouseClick(object sender, MouseEventArgs e)
         {
             PointToHex(e.X, e.Y, HexHeight, out var row, out var col);
 
@@ -114,7 +114,7 @@ namespace howto_hexagonal_grid
             _testRects.Add(rectangleF);
 #endif
 
-            picGrid.Refresh();
+            pictureBox.Refresh();
         }
 
         // Return the width of a hexagon.

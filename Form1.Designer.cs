@@ -32,43 +32,44 @@ namespace howto_hexagonal_grid
         /// </summary>
         private void InitializeComponent()
         {
-            picGrid = new PictureBox();
-            ((ISupportInitialize)(this.picGrid)).BeginInit();
+            pictureBox = new PictureBox();
+            ((ISupportInitialize)(this.pictureBox)).BeginInit();
             SuspendLayout();
+
             // 
-            // picGrid
+            // pictureBox
             // 
-            picGrid.Anchor = AnchorStyles.Top
+            pictureBox.Anchor = AnchorStyles.Top
                              | AnchorStyles.Bottom
                              | AnchorStyles.Left
                              | AnchorStyles.Right;
-            picGrid.BackColor = Color.White;
-            picGrid.Location = new Point(12, 12);
-            picGrid.Name = "picGrid";
-            picGrid.Size = new Size(260, 237);
-            picGrid.TabIndex = 1;
-            picGrid.TabStop = false;
-            picGrid.MouseMove += new MouseEventHandler(PicGrid_MouseMove);
-            picGrid.Resize += new System.EventHandler(PicGrid_Resize);
-            picGrid.MouseClick += new MouseEventHandler(PicGrid_MouseClick);
-            picGrid.Paint += new PaintEventHandler(PicGrid_Paint);
+            pictureBox.BackColor = Color.White;
+            pictureBox.Location = new Point(12, 12);
+            pictureBox.Name = "pictureBox";
+            pictureBox.Size = new Size(260, 237);
+            pictureBox.TabIndex = 1;
+            pictureBox.TabStop = false;
+            pictureBox.MouseMove += new MouseEventHandler(PictureBox_MouseMove);
+            pictureBox.Resize += new System.EventHandler(PictureBox_Resize);
+            pictureBox.MouseClick += new MouseEventHandler(PictureBox_MouseClick);
+            pictureBox.Paint += new PaintEventHandler(PictureBox_Paint);
+
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(284, 261);
-            Controls.Add(picGrid);
+            Controls.Add(pictureBox);
             Name = "Form1";
             Text = "howto_hexagonal_grid";
-            ((ISupportInitialize)picGrid).EndInit();
+            ((ISupportInitialize)pictureBox).EndInit();
             ResumeLayout(false);
-
         }
 
         #endregion
 
-        private PictureBox picGrid;
+        private PictureBox pictureBox;
     }
 }
 
