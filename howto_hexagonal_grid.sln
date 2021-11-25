@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "howto_hexagonal_grid", "how
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{07B25498-9657-4EDA-8D5F-1471E38575BB}"
 	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
 		README.md = README.md
+		Screenshot.png = Screenshot.png
 	EndProjectSection
 EndProject
 Global
