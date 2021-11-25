@@ -1,8 +1,12 @@
-# Hex Grid
+# Hex Grids on a Form
 
 Draw [hexagons](https://en.wikipedia.org/wiki/Hexagon) on a Windows form, and select them with squares.
 
 ![Three hexagons selected.](Screenshot.png)
+
+The hexgon is based on it's flat-side to flat-side height.
+
+![Diagram](Layout.png)
 
 ## Links:
  * [Visual Studio](https://visualstudio.microsoft.com/vs/)
