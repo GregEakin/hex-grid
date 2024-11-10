@@ -10,7 +10,7 @@ The hexgon is based on it's flat-side to flat-side height.
 
 ## Links:
  * [Visual Studio](https://visualstudio.microsoft.com/vs/)
- * [Windows Forms](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form)
+ * [Windows Desktop Forms](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form)
  * [Git Extensions (Free)](http://gitextensions.github.io/)
  * [ReSharper, Extensions for .NET Developers](https://www.jetbrains.com/resharper/)
 

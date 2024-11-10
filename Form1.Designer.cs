@@ -1,75 +1,75 @@
 ﻿using System.ComponentModel;
-using System.Drawing;
-using System.Windows.Forms;
 
-namespace howto_hexagonal_grid
+namespace HexagonalGrid;
+
+partial class Form1
 {
-    partial class Form1
-    {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private IContainer components = null;
+    /// <summary>
+    ///  Required designer variable.
+    /// </summary>
+    private IContainer _components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
+    private PictureBox _pictureBox = null;
+
+    /// <summary>
+    ///  Clean up any resources being used.
+    /// </summary>
+    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing && (_components != null))
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
+            _components.Dispose();
         }
 
-        #region Windows Form Designer generated code
+        base.Dispose(disposing);
+    }
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            pictureBox = new PictureBox();
-            ((ISupportInitialize)(this.pictureBox)).BeginInit();
-            SuspendLayout();
+    #region Windows Form Designer generated code
 
-            // 
-            // pictureBox
-            // 
-            pictureBox.Anchor = AnchorStyles.Top
+    /// <summary>
+    ///  Required method for Designer support - do not modify
+    ///  the contents of this method with the code editor.
+    /// </summary>
+    private void InitializeComponent()
+    {
+        _components = new System.ComponentModel.Container();
+
+        _pictureBox = new PictureBox();
+        ((ISupportInitialize)(_pictureBox)).BeginInit();
+        SuspendLayout();
+
+        // 
+        // pictureBox
+        // 
+        _pictureBox.Anchor = AnchorStyles.Top
                              | AnchorStyles.Bottom
                              | AnchorStyles.Left
                              | AnchorStyles.Right;
-            pictureBox.BackColor = Color.White;
-            pictureBox.Location = new Point(12, 12);
-            pictureBox.Name = "pictureBox";
-            pictureBox.Size = new Size(260, 237);
-            pictureBox.TabIndex = 1;
-            pictureBox.TabStop = false;
-            pictureBox.MouseMove += new MouseEventHandler(PictureBox_MouseMove);
-            pictureBox.Resize += new System.EventHandler(PictureBox_Resize);
-            pictureBox.MouseClick += new MouseEventHandler(PictureBox_MouseClick);
-            pictureBox.Paint += new PaintEventHandler(PictureBox_Paint);
+        _pictureBox.BackColor = Color.White;
+        _pictureBox.Location = new Point(12, 12);
+        _pictureBox.Name = "_pictureBox";
+        _pictureBox.Size = new Size(260, 237);
+        _pictureBox.TabIndex = 1;
+        _pictureBox.TabStop = false;
+        _pictureBox.MouseMove += new MouseEventHandler(PictureBox_MouseMove);
+        _pictureBox.Resize += new System.EventHandler(PictureBox_Resize);
+        _pictureBox.MouseClick += new MouseEventHandler(PictureBox_MouseClick);
+        _pictureBox.Paint += new PaintEventHandler(PictureBox_Paint);
 
-            // 
-            // Form1
-            // 
-            AutoScaleDimensions = new SizeF(6F, 13F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(284, 261);
-            Controls.Add(pictureBox);
-            Name = "Form1";
-            Text = "howto_hexagonal_grid";
-            ((ISupportInitialize)pictureBox).EndInit();
-            ResumeLayout(false);
-        }
+        // 
+        // Form1
+        // 
+        AutoScaleDimensions = new SizeF(6.0f, 13.0f);
+        AutoScaleMode = AutoScaleMode.Font;
+        ClientSize = new Size(284, 261);
+        Controls.Add(_pictureBox);
+        Name = "Form1";
+        Text = "Hexagonal Grid";
 
-        #endregion
-
-        private PictureBox pictureBox;
+        ((ISupportInitialize)_pictureBox).EndInit();
+        ResumeLayout(false);
     }
-}
 
+    #endregion
+}
